@@ -1,0 +1,44 @@
+.s3 {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.s3-top {
+    margin: 4rem auto;
+}
+
+.s3-bot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    
+    article {
+        @include flex(space-between, center);
+        margin: auto 1.6rem;
+        
+        img {
+            border: .3rem solid rgb(185, 185, 185);
+            height: 7rem;
+            width: 7rem;
+            border-radius: 50%;
+        }
+        
+        p {
+            font-size: .6em;
+            font-weight: 100;
+            width: 100%;
+            line-height: 1.3rem;
+        }
+    }
+}
+.s3-txt-left {
+text-align: right;
+padding: 0 1rem 0 0;
+}
+
+.s3-txt-right {
+text-align: left;
+padding: 0 0 0 1rem;
+
+}

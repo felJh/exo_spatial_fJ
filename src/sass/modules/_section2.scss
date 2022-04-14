@@ -1,0 +1,39 @@
+.s2 {
+    background-color: $whitish;
+    text-align: center;
+}
+
+.s2-top {
+    padding: 3rem 0;
+}
+
+.s2-mid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    
+    article {
+        background-color: #fff;
+        box-shadow: 0 0 .2rem grey;
+    
+        img {
+            width: 100%;
+        }
+    
+        p {
+            font-weight: 600;
+            font-size: .8em;
+            padding: .4rem;
+        }
+    }
+}
+
+
+.s2-bot {
+    
+    button {
+        margin: 3rem .3rem 4rem .3rem;
+    }
+}

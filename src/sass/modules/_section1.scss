@@ -1,0 +1,22 @@
+
+.s1 {
+    @include flex(center, flex-start);
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.s1-left {
+    width: 42%;
+    padding: 1rem;
+    
+    h2 {
+        padding: 1rem 0;
+    }
+}
+
+.s1-right {
+    width: 42%;
+    padding: 1rem;
+    line-height: 2rem;
+    font-size: .8em;
+}

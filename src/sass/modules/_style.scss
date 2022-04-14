@@ -1,16 +1,68 @@
-@mixin flex($justify, $align) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
+@import './mixins';
+@import '../variables';
+@import '../fonts';
+
+
+* {
+    box-sizing: border-box;
 }
 
-@mixin flexCol($justify, $align) {
-    display: flex;
-    flex-direction: column;
-    justify-content: $justify;
-    align-items: $align;
+body {
+    margin: 0;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $lightDark;
 }
-@import url(./modules/_mediaQueries.scss);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-@import url(./modules/_variables.scss);
+
+h2 {
+    font-size: 2em;
+    line-height: 1.6em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 100 !important;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: .8em;
+    line-height: 0;
+}
+
+h5 {
+    font-size: .6em;
+    font-weight: 100;
+}
+
+.btn {
+    border: none;
+    background-color: $red;
+    padding: .8rem 2rem;
+    color: $white;
+    font-weight: 100 !important;
+    border-radius: .2rem;
+}
+
+.btn2 {
+
+    border: none;
+    background-color: $dark;
+    padding: .8rem 2rem;
+    color: $white;
+    font-weight: 100 !important;
+    border-radius: .2rem;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.67);
+}
+
+

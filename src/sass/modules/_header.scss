@@ -1,0 +1,59 @@
+@import './mixins';
+@import '../variables';
+@import '../fonts';
+
+header {
+    color: $whitish;
+    background-image: url(../../images/banner.jpg);
+    background-position: top;
+    background-size: 100%;
+    height: 90vh;
+    text-align: center;
+
+    .head-top {
+        @include flex(space-between, center);
+        padding: 2rem;
+        font-size: .9em;
+        font-weight: 100;
+
+        span {
+            font-weight: 700;
+        }
+
+        ul {
+            @include flex(space-between, center);
+            padding: 0;
+
+            li {
+                
+                list-style-type: none;
+                margin: auto 1rem;
+            }
+        }
+    }
+
+    .head-bot {
+        @include flexCol(space-around, center);
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        margin-top: 2rem;
+
+        p {
+            line-height: 1.8rem;
+            font-weight: 100;
+        }
+
+        button {
+            margin: 1.4rem auto;
+        }
+    }
+}
+h1 {
+    font-size: 2.6em;
+    font-weight: 600;
+    letter-spacing: -.1rem;
+    line-height: 0;
+
+}
+
